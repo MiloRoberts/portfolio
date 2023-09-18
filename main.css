@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: cadetblue;
+}
+
+#works {
+    background-color: antiquewhite;
+}
+
+#about {
+    background-color: gainsboro;
+}
+
+#contact {
+    background-color: cornsilk;
+
+}
+
+nav>ul {
+    display: flex;
+    padding: 0%;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+form>fieldset>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+section,
+nav {
+    padding: 1rem;
+}

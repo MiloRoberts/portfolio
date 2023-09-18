@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milo Roberts - Home</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" aria-label="link to home" aria-current="page">Intro</a>
+                </li>
+                <li>
+                    <a href="./works.html" aria-label="link to projects">Works</a>
+                </li>
+                <li>
+                    <a href="./about.html" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a href="#contact" aria-label="link to contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Remember to answer the following. -->
+        <!-- 1. Who are you? -->
+        <!-- 2. What do you do? -->
+        <!-- 3. How can you help me? -->
+        <section id="intro" aria-labelledby="intro-title">
+            <header>
+                <h2 id="intro-title">Hello</h2>
+            </header>
+        </section>
+        <section id="works" aria-labelledby="works-title">
+            <header>
+                <h2 id="works-title">Works</h2>
+            </header>
+        </section>
+        <section id="about" aria-labelledby="about-title">
+            <header>
+                <h2 id="about-title">About</h2>
+            </header>
+        </section>
+        <section id="contact" aria-labelledby="contact-title">
+            <header>
+                <h2 id="contact-title">Contact</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <div>
+                            <label for="name">Full Name: </label>
+                            <input type="text" name="name" id="name" required placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" required placeholder="john@gmail.com">
+                        </div>
+                        <div>
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" required
+                                placeholder="Please give me a call at..."></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                        </div>
+                    </fieldset>
+                </form>
+            </header>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" aria-label="link to home" aria-current="page">Intro</a>
+                </li>
+                <li>
+                    <a href="./works.html" aria-label="link to projects">Works</a>
+                </li>
+                <li>
+                    <a href="./about.html" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a href="#contact" aria-label="link to contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./logic.js"></script>
+</body>
+
+</html>
