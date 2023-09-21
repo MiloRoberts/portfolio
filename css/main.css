@@ -22,6 +22,21 @@ nav {
 nav>ul {
     display: flex;
     padding: 0%;
+    align-items: center;
+}
+
+section,
+#menu-icon,
+#cancel-icon,
+#logo {
+    padding: 1rem;
+}
+
+#mobile-nav>ul {
+    justify-content: space-between;
+}
+
+#desktop-nav>ul {
     justify-content: space-around;
 }
 
@@ -32,11 +47,13 @@ a {
 
 li {
     list-style-type: none;
+    padding-block: .5rem;
+}
+
+#desktop-nav>ul>li {
     border: 1px solid black;
     width: 100%;
     text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
 }
 
 form>fieldset>div {
@@ -47,7 +64,12 @@ form>fieldset>div {
     gap: .5rem;
 }
 
-section,
-nav {
-    padding: 1rem;
+.display-none {
+    display: none;
+}
+
+#menu-icon:hover,
+#cancel-icon:hover,
+#logo:hover {
+    cursor: pointer;
 }

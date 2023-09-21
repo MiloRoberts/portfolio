@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milo Roberts - Home</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./fontello-78dd85f5/css/menu.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <!-- desktop navigation -->
+        <nav id="desktop-nav" class="desktop-view display-none">
             <ul>
                 <li>
                     <a href="/" aria-label="link to home" aria-current="page">Intro</a>
@@ -27,27 +29,50 @@
                 </li>
             </ul>
         </nav>
+        <!-- mobile navigation -->
+        <nav id="mobile-nav" class="mobile-view">
+            <ul>
+                <!-- different aria label required? -->
+                <li id="logo">
+                    <a href="/">Intro</a>
+                </li>
+                <li id="menu-icon"><i class="icon-menu"></i></li>
+                <li id="cancel-icon" class="display-none"><i class="icon-cancel"></i></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- Remember to answer the following. -->
         <!-- 1. Who are you? -->
         <!-- 2. What do you do? -->
         <!-- 3. How can you help me? -->
+
+        <!-- intro section -->
         <section id="intro" aria-labelledby="intro-title">
-            <header>
-                <h2 id="intro-title">Hello</h2>
-            </header>
+            <div class="section-wrapper">
+                <header>
+                    <h2 id="intro-title">Hello</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed rem adipisci dicta harum laborum
+                    doloremque eius veritatis praesentium illo molestias! Nisi molestiae alias cupiditate dolorem minus
+                    magni. Corrupti quod at maxime dolore? Dolorum labore voluptatibus soluta, minima dicta magni.
+                    Doloribus libero quia explicabo autem in delectus, deleniti amet, dolore corporis nostrum
+                    aspernatur. Sint repellat rem ducimus cum, dignissimos omnis harum?</p>
+            </div>
         </section>
+        <!-- works section -->
         <section id="works" aria-labelledby="works-title">
             <header>
                 <h2 id="works-title">Works</h2>
             </header>
         </section>
+        <!-- about section -->
         <section id="about" aria-labelledby="about-title">
             <header>
                 <h2 id="about-title">About</h2>
             </header>
         </section>
+        <!-- contact section -->
         <section id="contact" aria-labelledby="contact-title">
             <header>
                 <h2 id="contact-title">Contact</h2>
@@ -74,7 +99,19 @@
             </header>
         </section>
     </main>
+    <!-- footer -->
     <footer>
+        <p>Font license info
+
+
+            ## Font Awesome
+
+            Copyright (C) 2016 by Dave Gandy
+
+            Author: Dave Gandy
+            License: SIL ()
+            Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+        <!-- footer navigation -->
         <nav>
             <ul>
                 <li>
@@ -92,7 +129,7 @@
             </ul>
         </nav>
     </footer>
-    <script src="./logic.js"></script>
+    <script src="./logic.js" type="module"></script>
 </body>
 
 </html>
