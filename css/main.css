@@ -21,7 +21,7 @@ footer {
     cursor: pointer;
 }
 
-li {
+nav>ul {
     list-style-type: none;
 }
 
@@ -34,6 +34,18 @@ a {
 section,
 footer {
     padding: 1rem;
+}
+
+td {
+    vertical-align: top;
+}
+
+tr+tr>td {
+    padding-top: 1rem;
+}
+
+td:nth-of-type(odd) {
+    padding-right: 1rem;
 }
 
 .display-none {
