@@ -1,18 +1,50 @@
+:root {
+    --white: #fafcfd;
+    --dark-blue: #28497b;
+
+    --dark-gray: #363332;
+    --light-blue: #b0d6ff;
+
+    --blue: #477ea1;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: calc(19px*1.618);
+    font-weight: 700;
+}
+
+p,
+li,
+label,
+legend,
+a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
 #main-header,
-#about,
-#skills,
 footer {
-    background-color: #bbb;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+#about,
+#skills {
+    background-color: var(--light-blue);
+    color: var(--dark-gray);
 }
 
 #intro,
 #projects,
 #contact {
-    background-color: #ddd;
+    background-color: var(--white);
+    color: var(--dark-blue);
 }
 
 #main-header,
@@ -69,14 +101,17 @@ nav>ul {
 #primary-nav-wrapper>ul>li>a {
     display: block;
     line-height: 3rem;
+    transition: .5s;
 }
 
 #primary-nav-wrapper>ul>li>a:hover {
-    background-color: bisque;
+    background-color: var(--white);
+    color: var(--dark-gray);
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* contact form */
@@ -131,4 +166,10 @@ tr+tr>td {
 
 td:nth-of-type(odd) {
     padding-right: 1rem;
+}
+
+footer>nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
