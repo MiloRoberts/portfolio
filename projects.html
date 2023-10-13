@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milo Roberts - Projects</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./fontello-78dd85f5/css/menu.css">
@@ -12,20 +20,46 @@
 
 <body>
     <main>
-        <header id="subpage-main-header">
-            <h1>My Projects</h1>
+        <header id="main-header">
+            <div id="main-header-bar">
+                <a href="/" aria-label="link to home">Milo Roberts</a>
+                <!-- mobile navigation button -->
+                <button id="mobile-nav-button" aria-controls="primary-navigation">
+                    <i id="icon-menu" class="icon-menu"></i>
+                    <i id="icon-cancel" class="icon-cancel display-none"></i>
+                </button>
+            </div>
+            <!-- primary navigation -->
+            <nav id="primary-nav-wrapper" class="display-none">
+                <ul id="primary-navigation">
+                    <li>
+                        <a href="./about.html" aria-label="link to about" aria-current="page">About</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html" aria-label="link to projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./skills.html" aria-label="link to skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="/#contact" aria-label="link to contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section id="project-1" aria-labelledby="project-1-title">
+        <section id="project-1" aria-labelledby="project-1-title" class="odd-section">
             <header>
-                <h2 id="project-1-title">Project #1</h2>
+                <h2 id="project-1-title">BarrierDown.com</h2>
             </header>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit tenetur dolore nemo possimus!
                 Perspiciatis placeat quo totam eum pariatur, magnam fugit doloremque ipsum tempora harum sit vero
                 explicabo
                 mollitia, dolorem porro aliquam voluptatem. Dicta dolore deserunt totam libero fugit!</p>
-            <a href="#" target="_blank">GitHub Repository</a>
+            <div class="testing">
+                <a href="#" target="_blank">GitHub Repository</a>
+            </div>
         </section>
-        <section id="project-2" aria-labelledby="project-2-title">
+        <section id="project-2" aria-labelledby="project-2-title" class="even-section">
             <header>
                 <h2 id="project-2-title">Project #2</h2>
             </header>
@@ -35,7 +69,7 @@
                 mollitia, dolorem porro aliquam voluptatem. Dicta dolore deserunt totam libero fugit!</p>
             <a href="#" target="_blank">GitHub Repository</a>
         </section>
-        <section id="project-3" aria-labelledby="project-3-title">
+        <section id="project-3" aria-labelledby="project-3-title" class="odd-section">
             <header>
                 <h2 id="project-3-title">Project #3</h2>
             </header>
@@ -47,8 +81,38 @@
         </section>
     </main>
     <footer>
+        <p>Font license info
 
+
+            ## Font Awesome
+
+            Copyright (C) 2016 by Dave Gandy
+
+            Author: Dave Gandy
+            License: SIL ()
+            Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+        <!-- footer navigation -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" aria-label="link to home" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a href="./projects.html" aria-label="link to projects">Projects</a>
+                </li>
+                <li>
+                    <a href="./skills.html" aria-label="link to about">Skills</a>
+                </li>
+                <li>
+                    <a href="/#contact" aria-label="link to contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
+    <script src="./logic.js" type="module"></script>
 </body>
 
 </html>

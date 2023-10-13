@@ -1,0 +1,3 @@
+Aria-current needs to be dynamically set in main-headers and footers for each page.
+ 
+Mobile navigation needs to close after clicking on "Contact" link. 

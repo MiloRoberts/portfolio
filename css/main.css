@@ -12,10 +12,21 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: calc(19px*2.618);
+    font-weight: 700;
+}
+
 h2 {
     font-family: 'Jost', sans-serif;
     font-size: calc(19px*1.618);
     font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+section>header+* {
+    margin-top: 0;
 }
 
 p,
@@ -34,17 +45,14 @@ footer {
     color: var(--white);
 }
 
-#about,
-#skills {
-    background-color: var(--light-blue);
-    color: var(--dark-gray);
-}
-
-#intro,
-#projects,
-#contact {
+.odd-section {
     background-color: var(--white);
     color: var(--dark-blue);
+}
+
+.even-section {
+    background-color: var(--light-blue);
+    color: var(--dark-gray);
 }
 
 #main-header,
@@ -82,6 +90,22 @@ section>*:last-child {
 
 /* navigation */
 
+#mobile-nav-button {
+    border: none;
+}
+
+#mobile-nav-button,
+#icon-menu,
+#icon-cancel {
+    background-color: var(--dark-gray);
+}
+
+#icon-menu,
+#icon-cancel {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
 #mobile-nav-button:hover {
     cursor: pointer;
 }
@@ -96,6 +120,8 @@ nav>ul {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: .5rem;
 }
 
 #primary-nav-wrapper>ul>li>a {
@@ -112,6 +138,12 @@ nav>ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* about section */
+
+#photo-of-me {
+    max-width: 100%;
 }
 
 /* contact form */
@@ -148,14 +180,6 @@ legend {
 
 /* other pages */
 
-#first-heading {
-    background-color: #ddd;
-}
-
-/* #subpage-main-header>h1 {
-    margin: 0;
-} */
-
 td {
     vertical-align: top;
 }
@@ -172,4 +196,23 @@ footer>nav>ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+/* testing buttons */
+
+.testing {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    width: fit-content;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testing:hover {
+    background-color: var(--blue);
+}
+
+.testing>a {
+    display: block;
+    padding: .5rem;
 }
