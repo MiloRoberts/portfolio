@@ -1,3 +1,5 @@
+/* original palette */
+
 :root {
     --white: #fafcfd;
     --dark-blue: #28497b;
@@ -7,6 +9,20 @@
 
     --blue: #477ea1;
 }
+
+/* alternative palette */
+
+/* :root {
+    --white: #f8f9fc;
+    --dark-blue: #080d0b;
+
+    --dark-gray: #2b2817;
+    --light-blue: #bbd4f5;
+
+    --blue: #3c7be0;
+} */
+
+/* #0e4568 is nice. It goes with --white: #f8f9fc; and --light-blue: #bbd4f5; */
 
 html {
     scroll-behavior: smooth;
@@ -68,6 +84,7 @@ footer {
 
 section {
     display: flow-root;
+    scroll-margin-top: 3.75rem;
 }
 
 section>*:first-child {
@@ -81,6 +98,11 @@ section>*:last-child {
 }
 
 /* main header */
+
+#main-header {
+    position: sticky;
+    top: 0;
+}
 
 #main-header-bar {
     display: flex;
@@ -124,13 +146,13 @@ nav>ul {
     margin-top: .5rem;
 }
 
-#primary-nav-wrapper>ul>li>a {
+.navigation-bar-link {
     display: block;
     line-height: 3rem;
     transition: .5s;
 }
 
-#primary-nav-wrapper>ul>li>a:hover {
+.navigation-bar-link:hover {
     background-color: var(--white);
     color: var(--dark-gray);
 }
@@ -214,5 +236,5 @@ footer>nav>ul {
 
 .testing>a {
     display: block;
-    padding: .5rem;
+    padding: .5rem .75rem;
 }
