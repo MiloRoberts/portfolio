@@ -66,9 +66,14 @@ footer {
     color: var(--dark-blue);
 }
 
+.odd-section:nth-of-type(5n-2) {
+    background-image: linear-gradient(to bottom, var(--light-blue), .5%, var(--white), 1%, var(--white));
+}
+
 .even-section {
     background-color: var(--light-blue);
     color: var(--dark-gray);
+    background-image: linear-gradient(to bottom, var(--white), .5%, var(--light-blue), 1%, var(--light-blue));
 }
 
 #main-header,
@@ -162,7 +167,22 @@ a {
     color: inherit;
 }
 
+/* hero section */
+#hero {
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), url('../images/portfolio-hero-mobile-lumn-399160.jpg');
+}
+
+#hero>*:last-child {
+    margin-bottom: 16rem;
+}
+
 /* about section */
+
+#about {
+    background-image: linear-gradient(to bottom, rgb(223, 223, 223), 1%, var(--light-blue));
+}
 
 #photo-of-me {
     max-width: 100%;
