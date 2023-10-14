@@ -1,5 +1,3 @@
-/* original palette */
-
 :root {
     --white: #fafcfd;
     --dark-blue: #28497b;
@@ -7,22 +5,9 @@
     --dark-gray: #363332;
     --light-blue: #b0d6ff;
 
-    --blue: #477ea1;
+    --blue: #92baea;
+    --call-to-action-color: #6f2138;
 }
-
-/* alternative palette */
-
-/* :root {
-    --white: #f8f9fc;
-    --dark-blue: #080d0b;
-
-    --dark-gray: #2b2817;
-    --light-blue: #bbd4f5;
-
-    --blue: #3c7be0;
-} */
-
-/* #0e4568 is nice. It goes with --white: #f8f9fc; and --light-blue: #bbd4f5; */
 
 html {
     scroll-behavior: smooth;
@@ -168,6 +153,7 @@ a {
 }
 
 /* hero section */
+
 #hero {
     background-size: cover;
     background-position: bottom;
@@ -238,23 +224,49 @@ footer>nav>ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    font-weight: bold;
+    color: var(--light-blue);
 }
 
-/* testing buttons */
+footer>nav>ul>li:hover {
+    color: var(--white);
+}
 
-.testing {
-    background-color: var(--dark-gray);
+footer>p {
+    font-size: small;
+}
+
+/* call-to-action buttons */
+
+.call-to-action {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--call-to-action-color);
     color: var(--white);
     width: fit-content;
     border-radius: 15px;
     transition: .5s;
+    font-weight: bold;
 }
 
-.testing:hover {
-    background-color: var(--blue);
+.call-to-action:hover {
+    background-color: var(--white);
+    color: var(--call-to-action-color);
+    box-shadow: inset 0 0 2px var(--call-to-action-color);
 }
 
-.testing>a {
+.call-to-action>a {
     display: block;
     padding: .5rem .75rem;
+}
+
+/* links */
+
+.read-more {
+    font-weight: bold;
+    text-align: right;
+}
+
+.read-more:hover {
+    color: var(--call-to-action-color);
 }
