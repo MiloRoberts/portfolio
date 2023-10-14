@@ -66,7 +66,7 @@ footer {
     color: var(--dark-blue);
 }
 
-.odd-section:nth-of-type(5n-2) {
+.odd-section:nth-of-type(1n+2) {
     background-image: linear-gradient(to bottom, var(--light-blue), .5%, var(--white), 1%, var(--white));
 }
 
@@ -175,7 +175,7 @@ a {
 }
 
 #hero>*:last-child {
-    margin-bottom: 16rem;
+    margin-bottom: 14rem;
 }
 
 /* about section */
