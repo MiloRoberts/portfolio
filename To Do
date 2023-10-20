@@ -1,1 +1,7 @@
 Aria-current needs to be dynamically set in main-headers and footers for each page. 
+
+I should perhaps add a pattern to spruce up the backgrounds a little.
+
+Set a max. width for everything.
+
+Fix hover effect on desktop navigation.

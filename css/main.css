@@ -34,7 +34,7 @@ h3+h3 {
     padding-top: 0;
 }
 
-section>header+* {
+section>div>header+* {
     margin-top: 0;
 }
 
@@ -46,6 +46,25 @@ a {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 19px;
     line-height: 1.5;
+}
+
+p {
+    text-indent: 2.5rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+figure {
+    margin-block: 0;
+}
+
+figcaption {
+    text-align: center;
 }
 
 #main-header,
@@ -85,21 +104,34 @@ section {
     scroll-margin-top: 3.75rem;
 }
 
-section>*:first-child {
+section>div>*:first-child {
     display: block;
     margin-top: 2rem;
 }
 
-section>*:last-child {
+section>div>*:last-child {
     display: block;
     margin-bottom: 2rem;
+}
+
+.section-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* main header */
 
 #main-header {
-    position: sticky;
+    /* position: sticky;
+    top: 0; */
+    /* overflow: hidden; */
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    z-index: 1;
 }
 
 #main-header-bar {
@@ -135,7 +167,7 @@ nav>ul {
     padding-left: 0;
 }
 
-#primary-nav-wrapper>ul {
+#primary-navigation {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -163,15 +195,32 @@ a {
 /* hero section */
 
 #hero {
+    margin-top: 3rem;
     background-size: cover;
     background-position: bottom;
     background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), url('../images/portfolio-hero-mobile-lumn-399160.jpg');
     text-align: center;
 }
 
+#hero-title {
+    display: none;
+}
 
-#hero>*:last-child {
+#hero-header {
+    margin-top: 5rem;
+}
+
+#hero-header>h2 {
+    font-size: calc(19px*1.25);
+}
+
+#hero-cta {
+    margin-top: 2.5rem;
     margin-bottom: 14rem;
+}
+
+#hero-cta>a {
+    font-size: calc(19px*1.1);
 }
 
 #plant-image {
@@ -182,10 +231,6 @@ a {
 
 #about {
     background-image: linear-gradient(to bottom, rgb(223, 223, 223), 1%, var(--light-blue));
-}
-
-#photo-of-me {
-    max-width: 100%;
 }
 
 /* contact form */
@@ -234,7 +279,7 @@ td:nth-of-type(odd) {
     padding-right: 1rem;
 }
 
-footer>nav>ul {
+footer>div>nav>ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -242,11 +287,11 @@ footer>nav>ul {
     color: var(--light-blue);
 }
 
-footer>nav>ul>li:hover {
+footer>div>nav>ul>li:hover {
     color: var(--white);
 }
 
-footer>p {
+footer>div>p {
     font-size: small;
 }
 
@@ -288,61 +333,55 @@ footer>p {
 }
 
 @media screen and (min-width: 640px) {
+    #main-header>div {
+        display: flex;
+    }
+
+    #mobile-nav-button {
+        display: none;
+    }
+
+    #primary-nav-wrapper {
+        display: block;
+        width: 75%;
+        margin-left: auto;
+    }
+
+    #primary-navigation {
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navigation-bar-link:hover {
+        background-color: unset;
+        color: unset;
+    }
+
     #hero {
+        filter: brightness(110%);
         background-size: contain;
         background-repeat: no-repeat;
-        filter: brightness(110%);
-
-        height: 675px;
+        background-position: bottom;
         background-image: url('../images/portfolio-hero-desktop-lumn-399160.jpg');
-
-
-        /* background-position-x: right; */
-        /* background-position-y: top; */
-        /* background-image: url('../images/portfolio-hero-desktop-dominika-roseclay-1036808.jpg'); */
-
-        /* background-position-x: left; */
-        /* background-position-y: bottom; */
-        /* background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), linear-gradient(to right, transparent, 70%, transparent), url('../images/portfolio-hero-desktop-lumn-399160.jpg'); */
-
-        /* background-image: url('../images/new-hero.jpg');
-        background-position-x: right;
-        background-position-y: top; */
     }
 
-    /* #hero-content-container {
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    } */
+    #hero-header {
+        margin-top: 6rem;
+    }
 
-    /* #hero-content-container {
-        text-align: left;
-        width: 66%;
-    } */
+    #hero-cta {
+        margin-bottom: 13rem;
+    }
 
-    /* #hero-content-container>div {
-        margin-top: 2.5rem;
-        margin-right: 4%;
-    } */
+    #about-preview-container {
+        display: flex;
+        gap: 1.5rem;
+    }
 
-    /* #hero-content-container>div {
-        margin-right: 0%;
-    } */
-
-    /* #hero>*:last-child {
-        margin-bottom: 3rem;
-    } */
+    #photo-of-me-teaching {
+        margin-bottom: 1rem;
+        max-width: none;
+    }
 }
-
-/* @media screen and (min-width: 900px) {
-    #plant-image {
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 10%;
-        filter: brightness(110%);
-        height: 50%;
-    }
-} */

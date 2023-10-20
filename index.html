@@ -21,144 +21,177 @@
 
 <body>
     <header id="main-header">
-        <div id="main-header-bar">
-            <a href="/" aria-label="link to home" aria-current="page">Milo Roberts</a>
-            <!-- mobile navigation button -->
-            <button id="mobile-nav-button" aria-controls="primary-navigation">
-                <i id="icon-menu" class="icon-menu"></i>
-                <i id="icon-cancel" class="icon-cancel display-none"></i>
-            </button>
+        <div class="section-wrapper">
+            <div id="main-header-bar">
+                <a href="/" aria-label="link to home" aria-current="page">Milo Roberts</a>
+                <!-- mobile navigation button -->
+                <button id="mobile-nav-button" aria-controls="primary-navigation">
+                    <i id="icon-menu" class="icon-menu"></i>
+                    <i id="icon-cancel" class="icon-cancel display-none"></i>
+                </button>
+            </div>
+            <!-- primary navigation -->
+            <nav id="primary-nav-wrapper" class="display-none">
+                <ul id="primary-navigation">
+                    <li>
+                        <a href="./about.html" aria-label="link to about" class="navigation-bar-link">About</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html" aria-label="link to projects" class="navigation-bar-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./skills.html" aria-label="link to skills" class="navigation-bar-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="./#contact" aria-label="link to contact" class="navigation-bar-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!-- primary navigation -->
-        <nav id="primary-nav-wrapper" class="display-none">
-            <ul id="primary-navigation">
-                <li>
-                    <a href="./about.html" aria-label="link to about" class="navigation-bar-link">About</a>
-                </li>
-                <li>
-                    <a href="./projects.html" aria-label="link to projects" class="navigation-bar-link">Projects</a>
-                </li>
-                <li>
-                    <a href="./skills.html" aria-label="link to skills" class="navigation-bar-link">Skills</a>
-                </li>
-                <li>
-                    <a href="./#contact" aria-label="link to contact" class="navigation-bar-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
         <!-- hero section -->
         <section id="hero" aria-labelledby="hero-title" class="odd-section">
-            <img id="plant-image" src="./images/plant.jpg" alt="a small plant">
-            <div id="hero-content-container">
-                <header>
-                    <h2 id="hero-title">Hello,</h2>
+            <div class="section-wrapper">
+                <header id="hero-header">
+                    <h1 id="hero-title">Who I am and what I do.</h1>
+                    <h2>I develop custom web solutions to front and back-end problems.</h2>
+                    <h2> If your project needs a Swiss Army knife...</h2>
                 </header>
-                <h3>I develop custom web solutions to front and back-end problems.</h3>
-                <h3> If your project needs a Swiss Army knife...</h3>
-                <div class="call-to-action">
+                <div id="hero-cta" class="call-to-action">
                     <a href="./#contact">...Contact Me</a>
                 </div>
             </div>
         </section>
         <!-- about section -->
         <section id="about" aria-labelledby="about-title" class="even-section">
-            <header>
-                <h2 id="about-title">About</h2>
-            </header>
-            <img id="photo-of-me" src="./images/teaching.jpg" alt="photo of me">
-            <a href="./about.html" class="read-more">Read More</a>
+            <div class="section-wrapper">
+                <header>
+                    <h2 id="about-title">About</h2>
+                </header>
+                <div id="about-preview-container">
+                    <figure>
+                        <img id="photo-of-me-teaching" src="./images/teaching.jpg" alt="photo of me">
+                        <figcaption>Me happily receiving a gift from a couple of students</figcaption>
+                    </figure>
+                    <div>
+
+                        <p>A few years ago, I decided it was time for a career change, so I left my job teaching in
+                            South
+                            Korea
+                            and
+                            took up coding. Fast forward a bit and I've earned an Associate's degree in computer
+                            programming
+                            and
+                            web
+                            development.</p>
+                        <p>While I miss my life living abroad, this new field of work has proven enriching in its own
+                            right,
+                            and I look forward to each new project I begin.</p>
+                        <a href="./about.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- projects section -->
         <section id="projects" aria-labelledby="projects-title" class="odd-section">
-            <header>
-                <h2 id="projects-title">Projects</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam sunt. Cupiditate quas voluptate
-                cumque quis eius beatae alias iste obcaecati ea molestias. Nemo eaque odio numquam nam praesentium
-                facere dolor molestiae voluptatum consequatur culpa, tenetur veritatis omnis voluptate quod corporis,
-                labore ut officiis quibusdam laudantium facilis quae deleniti nobis?</p>
-            <a href="./projects.html" class="read-more">Read More</a>
+            <div class="section-wrapper">
+                <header>
+                    <h2 id="projects-title">Projects</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam sunt. Cupiditate quas voluptate
+                    cumque quis eius beatae alias iste obcaecati ea molestias. Nemo eaque odio numquam nam praesentium
+                    facere dolor molestiae voluptatum consequatur culpa, tenetur veritatis omnis voluptate quod
+                    corporis,
+                    labore ut officiis quibusdam laudantium facilis quae deleniti nobis?</p>
+                <a href="./projects.html" class="read-more">Read More</a>
+            </div>
         </section>
         <!-- skills section -->
         <section id="skills" aria-labelledby="skills-title" class="even-section">
-            <header>
-                <h2 id="skills-title">Skills</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ullam sunt. Cupiditate quas voluptate
-                cumque quis eius beatae alias iste obcaecati ea molestias. Nemo eaque odio numquam nam praesentium
-                facere dolor molestiae voluptatum consequatur culpa, tenetur veritatis omnis voluptate quod corporis,
-                labore ut officiis quibusdam laudantium facilis quae deleniti nobis?</p>
-            <a href="./skills.html" class="read-more">Read More</a>
+            <div class="section-wrapper">
+                <header>
+                    <h2 id="skills-title">Skills</h2>
+                </header>
+                <p>I've used JavaScript, PHP, and Laravel to build the website BarrierDown.com, designed a small MS
+                    Access
+                    database for the town of Westport, and tutored Oracle and JavaScript to college-level students.</p>
+                <p>I also have extensive skills developed over years of teaching abroad. These include public speaking,
+                    working collaboratively, and cross-cultural awareness.</p>
+                <a href="./skills.html" class="read-more">Read More</a>
+            </div>
         </section>
         <!-- contact section -->
         <section id="contact" aria-labelledby="contact-title" class="odd-section">
-            <header>
-                <h2 id="contact-title">Contact</h2>
-                <form action="./email.php">
-                    <fieldset>
-                        <legend>Contact Form</legend>
-                        <div id="form-fields-container">
-                            <div class="form-field">
-                                <label for="name">Full Name: </label>
-                                <input type="text" name="name" id="name" required placeholder="John Doe">
+            <div class="section-wrapper">
+                <header>
+                    <h2 id="contact-title">Contact</h2>
+                    <form action="./email.php">
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <div id="form-fields-container">
+                                <div class="form-field">
+                                    <label for="name">Full Name: </label>
+                                    <input type="text" name="name" id="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email: </label>
+                                    <input type="email" name="email" id="email" required placeholder="john@gmail.com">
+                                </div>
+                                <div class="form-field">
+                                    <label for="subject">Subject: </label>
+                                    <input type="text" name="subject" id="subject" required
+                                        placeholder="Regarding..."></input>
+                                </div>
+                                <div class="form-field">
+                                    <label for="message">Message: </label>
+                                    <textarea name="message" id="message" required
+                                        placeholder="Please give me a call at..., etc."></textarea>
+                                </div>
+                                <div class="form-field">
+                                    <input type="submit" value="Send">
+                                </div>
                             </div>
-                            <div class="form-field">
-                                <label for="email">Email: </label>
-                                <input type="email" name="email" id="email" required placeholder="john@gmail.com">
-                            </div>
-                            <div class="form-field">
-                                <label for="subject">Subject: </label>
-                                <input type="text" name="subject" id="subject" required
-                                    placeholder="Regarding..."></input>
-                            </div>
-                            <div class="form-field">
-                                <label for="message">Message: </label>
-                                <textarea name="message" id="message" required
-                                    placeholder="Please give me a call at..., etc."></textarea>
-                            </div>
-                            <div class="form-field">
-                                <input type="submit" value="Send">
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </header>
+                        </fieldset>
+                    </form>
+                </header>
+            </div>
         </section>
     </main>
     <!-- footer -->
     <footer>
-        <!-- footer navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="/" aria-label="link to home" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="./about.html" aria-label="link to about">About</a>
-                </li>
-                <li>
-                    <a href="./projects.html" aria-label="link to projects">Projects</a>
-                </li>
-                <li>
-                    <a href="./skills.html" aria-label="link to about">Skills</a>
-                </li>
-                <li>
-                    <a href="./#contact" aria-label="link to contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <p>Font license info
+        <div class="section-wrapper">
+            <!-- footer navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" aria-label="link to home" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" aria-label="link to about">About</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html" aria-label="link to projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./skills.html" aria-label="link to about">Skills</a>
+                    </li>
+                    <li>
+                        <a href="./#contact" aria-label="link to contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>Font license info
 
 
-            ## Font Awesome
+                ## Font Awesome
 
-            Copyright (C) 2016 by Dave Gandy
+                Copyright (C) 2016 by Dave Gandy
 
-            Author: Dave Gandy
-            License: SIL ()
-            Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+                Author: Dave Gandy
+                License: SIL ()
+                Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+        </div>
     </footer>
     <script src="./logic.js" type="module"></script>
 </body>
