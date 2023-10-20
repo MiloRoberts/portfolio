@@ -50,16 +50,16 @@
     <main>
         <!-- hero section -->
         <section id="hero" aria-labelledby="hero-title" class="odd-section">
-            <header>
-                <h2 id="hero-title">Hello</h2>
-            </header>
-            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ut!</p>
-            <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed rem adipisci dicta harum
-                laborum
-                doloremque eius veritatis praesentium illo molestias! Nisi molestiae alias cupiditate dolorem minus
-                magni.</p>
-            <div class="call-to-action">
-                <a href="./#contact">Contact Me</a>
+            <img id="plant-image" src="./images/plant.jpg" alt="a small plant">
+            <div id="hero-content-container">
+                <header>
+                    <h2 id="hero-title">Hello,</h2>
+                </header>
+                <h3>I develop custom web solutions to front and back-end problems.</h3>
+                <h3> If your project needs a Swiss Army knife...</h3>
+                <div class="call-to-action">
+                    <a href="./#contact">...Contact Me</a>
+                </div>
             </div>
         </section>
         <!-- about section -->
@@ -67,7 +67,7 @@
             <header>
                 <h2 id="about-title">About</h2>
             </header>
-            <img id="photo-of-me" src="./images/pexels-italo-melo-2379004.jpg" alt="photo of me">
+            <img id="photo-of-me" src="./images/teaching.jpg" alt="photo of me">
             <a href="./about.html" class="read-more">Read More</a>
         </section>
         <!-- projects section -->
@@ -96,7 +96,7 @@
         <section id="contact" aria-labelledby="contact-title" class="odd-section">
             <header>
                 <h2 id="contact-title">Contact</h2>
-                <form action="">
+                <form action="./email.php">
                     <fieldset>
                         <legend>Contact Form</legend>
                         <div id="form-fields-container">
@@ -107,6 +107,11 @@
                             <div class="form-field">
                                 <label for="email">Email: </label>
                                 <input type="email" name="email" id="email" required placeholder="john@gmail.com">
+                            </div>
+                            <div class="form-field">
+                                <label for="subject">Subject: </label>
+                                <input type="text" name="subject" id="subject" required
+                                    placeholder="Regarding..."></input>
                             </div>
                             <div class="form-field">
                                 <label for="message">Message: </label>

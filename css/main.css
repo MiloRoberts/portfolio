@@ -26,6 +26,14 @@ h2 {
     margin-bottom: .5rem;
 }
 
+h3 {
+    padding-top: .75rem;
+}
+
+h3+h3 {
+    padding-top: 0;
+}
+
 section>header+* {
     margin-top: 0;
 }
@@ -158,10 +166,16 @@ a {
     background-size: cover;
     background-position: bottom;
     background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), url('../images/portfolio-hero-mobile-lumn-399160.jpg');
+    text-align: center;
 }
+
 
 #hero>*:last-child {
     margin-bottom: 14rem;
+}
+
+#plant-image {
+    display: none;
 }
 
 /* about section */
@@ -264,9 +278,71 @@ footer>p {
 
 .read-more {
     font-weight: bold;
-    text-align: right;
+    max-width: fit-content;
+    display: block;
+    margin-left: auto;
 }
 
 .read-more:hover {
     color: var(--call-to-action-color);
 }
+
+@media screen and (min-width: 640px) {
+    #hero {
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: brightness(110%);
+
+        height: 675px;
+        background-image: url('../images/portfolio-hero-desktop-lumn-399160.jpg');
+
+
+        /* background-position-x: right; */
+        /* background-position-y: top; */
+        /* background-image: url('../images/portfolio-hero-desktop-dominika-roseclay-1036808.jpg'); */
+
+        /* background-position-x: left; */
+        /* background-position-y: bottom; */
+        /* background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), linear-gradient(to right, transparent, 70%, transparent), url('../images/portfolio-hero-desktop-lumn-399160.jpg'); */
+
+        /* background-image: url('../images/new-hero.jpg');
+        background-position-x: right;
+        background-position-y: top; */
+    }
+
+    /* #hero-content-container {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    } */
+
+    /* #hero-content-container {
+        text-align: left;
+        width: 66%;
+    } */
+
+    /* #hero-content-container>div {
+        margin-top: 2.5rem;
+        margin-right: 4%;
+    } */
+
+    /* #hero-content-container>div {
+        margin-right: 0%;
+    } */
+
+    /* #hero>*:last-child {
+        margin-bottom: 3rem;
+    } */
+}
+
+/* @media screen and (min-width: 900px) {
+    #plant-image {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 10%;
+        filter: brightness(110%);
+        height: 50%;
+    }
+} */
