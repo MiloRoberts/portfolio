@@ -97,6 +97,7 @@ footer {
 #main-header,
 footer {
     padding-block: 1rem;
+    /* padding-block: 1.5rem; */
 }
 
 section {
@@ -140,10 +141,19 @@ section>div>*:last-child {
     align-items: center;
 }
 
+#main-header-bar>a {
+    font-weight: bold;
+}
+
+#main-header-bar>a:hover {
+    color: var(--light-blue);
+}
+
 /* navigation */
 
 #mobile-nav-button {
     border: none;
+    padding: 0;
 }
 
 #mobile-nav-button,
@@ -156,6 +166,11 @@ section>div>*:last-child {
 #icon-cancel {
     color: var(--white);
     font-size: 1.5rem;
+}
+
+#icon-menu:hover,
+#icon-cancel:hover {
+    color: var(--light-blue);
 }
 
 #mobile-nav-button:hover {
@@ -178,13 +193,19 @@ nav>ul {
 
 .navigation-bar-link {
     display: block;
-    line-height: 3rem;
+    /* line-height: 3rem; */
+    line-height: 4rem;
     transition: .5s;
+    font-weight: bold;
 }
 
 .navigation-bar-link:hover {
     background-color: var(--white);
     color: var(--dark-gray);
+}
+
+.navigation-bar-link:first-child {
+    margin-top: .5rem;
 }
 
 a {
@@ -267,6 +288,10 @@ legend {
 
 /* other pages */
 
+.first-subsection {
+    margin-top: 7rem;
+}
+
 td {
     vertical-align: top;
 }
@@ -293,6 +318,10 @@ footer>div>nav>ul>li:hover {
 
 footer>div>p {
     font-size: small;
+}
+
+.footer-text {
+    text-indent: 0;
 }
 
 /* call-to-action buttons */
@@ -343,7 +372,7 @@ footer>div>p {
 
     #primary-nav-wrapper {
         display: block;
-        width: 75%;
+        width: 72%;
         margin-left: auto;
     }
 
@@ -356,7 +385,7 @@ footer>div>p {
 
     .navigation-bar-link:hover {
         background-color: unset;
-        color: unset;
+        color: var(--light-blue);
     }
 
     #hero {
@@ -383,5 +412,9 @@ footer>div>p {
     #photo-of-me-teaching {
         margin-bottom: 1rem;
         max-width: none;
+    }
+
+    .navigation-bar-link:first-child {
+        margin-top: 0rem;
     }
 }

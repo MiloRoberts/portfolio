@@ -1,3 +1,5 @@
+// toggleDisplay accepts x HTML elements as arguments and toggles the display-none class for them 
+
 function toggleDisplay(...items) {
     try {
         if (!items.length > 0) {
@@ -9,7 +11,6 @@ function toggleDisplay(...items) {
     } catch (error) {
         console.log(error);
     }
-
 }
 
 export default toggleDisplay;

@@ -21,116 +21,137 @@
 <body>
     <main>
         <header id="main-header">
-            <div id="main-header-bar">
-                <a href="/" aria-label="link to home">Milo Roberts</a>
-                <!-- mobile navigation button -->
-                <button id="mobile-nav-button" aria-controls="primary-navigation">
-                    <i id="icon-menu" class="icon-menu"></i>
-                    <i id="icon-cancel" class="icon-cancel display-none"></i>
-                </button>
+            <div class="section-wrapper">
+
+                <div id="main-header-bar">
+                    <a href="/" aria-label="link to home">Milo Roberts</a>
+                    <!-- mobile navigation button -->
+                    <button id="mobile-nav-button" aria-controls="primary-navigation">
+                        <i id="icon-menu" class="icon-menu"></i>
+                        <i id="icon-cancel" class="icon-cancel display-none"></i>
+                    </button>
+                </div>
+                <!-- primary navigation -->
+                <nav id="primary-nav-wrapper" class="display-none">
+                    <ul id="primary-navigation">
+                        <li>
+                            <a href="./about.html" aria-label="link to about" aria-current="page"
+                                class="navigation-bar-link">About</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html" aria-label="link to projects"
+                                class="navigation-bar-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./skills.html" aria-label="link to skills" class="navigation-bar-link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="/#contact" aria-label="link to contact" class="navigation-bar-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- primary navigation -->
-            <nav id="primary-nav-wrapper" class="display-none">
-                <ul id="primary-navigation">
-                    <li>
-                        <a href="./about.html" aria-label="link to about" aria-current="page"
-                            class="navigation-bar-link">About</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html" aria-label="link to projects" class="navigation-bar-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./skills.html" aria-label="link to skills" class="navigation-bar-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="/#contact" aria-label="link to contact" class="navigation-bar-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
-        <section id="my-background" aria-labelledby="my-background-title" class="odd-section">
-            <header>
-                <h2 id="my-background-title">Why Web Development?</h2>
-            </header>
-            <p>After spending the majority of the 2010s living and working in East Asia, I was itching for a change. I'd
-                always had at least a passing interest in computers, and the thought of being able to build my own
-                websites enticed me to try web development. So I left my job teaching English in S. Korea and enrolled
-                in an associate
-                degree program.</p>
-            <p>Fast-forward a bit in time, and I'm now working as a student instructor anxiously
-                awaiting my next challenge.</p>
-            <div class="call-to-action">
-                <a href="#" target="_blank">View Resume</a>
+        <section id="my-background" aria-labelledby="my-background-title" class="odd-section first-subsection">
+            <div class="section-wrapper">
+
+                <header>
+                    <h2 id="my-background-title">Why Web Development?</h2>
+                </header>
+                <p>After spending the majority of the 2010s living and working in East Asia, I was itching for a change.
+                    I'd
+                    always had at least a passing interest in computers, and the thought of being able to build my own
+                    websites enticed me to try web development. So I left my job teaching English in S. Korea and
+                    enrolled
+                    in an associate
+                    degree program.</p>
+                <p>Fast-forward a bit in time, and I'm now working as a student instructor anxiously
+                    awaiting my next challenge.</p>
+                <div class="call-to-action">
+                    <a href="#" target="_blank">View Resume</a>
+                </div>
             </div>
         </section>
         <section id="hobbies" aria-labelledby="hobbies-title" class="even-section">
-            <header>
-                <h2 id="hobbies-title">What Are My Hobbies?</h2>
-            </header>
-            <p>Music, history, Japanese, old video games... I have a lot of interests. My fascination with history has
-                slowly
-                increased over the years to the point at which, nowadays, rather than falling asleep to some Genesis or
-                Cure
-                album, I'm instead dozing off to audio lectures on the Black Death and Classical Greece.</p>
+            <div class="section-wrapper">
+
+                <header>
+                    <h2 id="hobbies-title">What Are My Hobbies?</h2>
+                </header>
+                <p>Music, history, Japanese, old video games... I have a lot of interests. My fascination with history
+                    has
+                    slowly
+                    increased over the years to the point at which, nowadays, rather than falling asleep to some Genesis
+                    or
+                    Cure
+                    album, I'm instead dozing off to audio lectures on the Black Death and Classical Greece.</p>
+            </div>
         </section>
         <section id="current-activities" aria-labelledby="current-activities-title" class="odd-section">
-            <header>
-                <h2 id="current-activities-title">Current Activities</h2>
-            </header>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Studying</td>
-                        <td><cite>React 18 Tutorial and Projects</cite> (John Smilga, 2023)</td>
-                    </tr>
-                    <tr>
-                        <td>Reading</td>
-                        <td><cite>Dragonflight</cite> (Anne McCaffrey, 1968)</td>
-                    </tr>
-                    <tr>
-                        <td>Listening</td>
-                        <td><cite>Living the French Revolution and the Age of Napoleon</cite> (Suzanne M. Desan, 2013)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Playing</td>
-                        <td><cite>Shadow Tower</cite> (FromSoftware, 1998)</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="section-wrapper">
+
+                <header>
+                    <h2 id="current-activities-title">Current Activities</h2>
+                </header>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Studying</td>
+                            <td><cite>React 18 Tutorial and Projects</cite> (John Smilga, 2023)</td>
+                        </tr>
+                        <tr>
+                            <td>Reading</td>
+                            <td><cite>Dragonflight</cite> (Anne McCaffrey, 1968)</td>
+                        </tr>
+                        <tr>
+                            <td>Listening</td>
+                            <td><cite>Living the French Revolution and the Age of Napoleon</cite> (Suzanne M. Desan,
+                                2013)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Playing</td>
+                            <td><cite>Shadow Tower</cite> (FromSoftware, 1998)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <footer>
-        <!-- footer navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="/" aria-label="link to home">Home</a>
-                </li>
-                <li>
-                    <a href="./about.html" aria-label="link to about" aria-current="page">About</a>
-                </li>
-                <li>
-                    <a href="./projects.html" aria-label="link to projects">Projects</a>
-                </li>
-                <li>
-                    <a href="./skills.html" aria-label="link to skills">Skills</a>
-                </li>
-                <li>
-                    <a href="./#contact" aria-label="link to contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <p>Font license info
+        <div class="section-wrapper">
+
+            <!-- footer navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" aria-label="link to about" aria-current="page">About</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html" aria-label="link to projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./skills.html" aria-label="link to skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="./#contact" aria-label="link to contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer-text">Font license info
 
 
-            ## Font Awesome
+                ## Font Awesome
 
-            Copyright (C) 2016 by Dave Gandy
+                Copyright (C) 2016 by Dave Gandy
 
-            Author: Dave Gandy
-            License: SIL ()
-            Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+                Author: Dave Gandy
+                License: SIL ()
+                Homepage: http://fortawesome.github.com/Font-Awesome/</p>
+        </div>
     </footer>
     <script src="./logic.js" type="module"></script>
 </body>
