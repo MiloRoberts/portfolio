@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--white);
+}
+
 h1 {
     font-family: 'Jost', sans-serif;
     font-size: calc(19px*2.618);
@@ -288,6 +292,12 @@ legend {
 
 /* other pages */
 
+.subsection-heading {
+    margin-top: 7rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
 .first-subsection {
     margin-top: 7rem;
 }
@@ -302,6 +312,23 @@ tr+tr>td {
 
 td:nth-of-type(odd) {
     padding-right: 1rem;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+.link:hover {
+    color: var(--blue);
+}
+
+#database-image {
+    border: 2px solid var(--light-blue);
+}
+
+#database-image:hover {
+    filter: brightness(95%);
 }
 
 footer>div>nav>ul {
@@ -322,6 +349,11 @@ footer>div>p {
 
 .footer-text {
     text-indent: 0;
+}
+
+.skills-section+section>div>header {
+    border-top: 1px solid var(--blue);
+    padding-top: 2rem;
 }
 
 /* call-to-action buttons */
