@@ -223,7 +223,7 @@ a {
     margin-top: 3rem;
     background-size: cover;
     background-position: bottom;
-    background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), url('../images/portfolio-hero-mobile-lumn-399160.jpg');
+    background-image: linear-gradient(to top, transparent, var(--white), 70%, var(--white)), url('../public/images/portfolio-hero-mobile-lumn-399160.jpg');
     text-align: center;
 }
 
@@ -293,7 +293,7 @@ legend {
 /* other pages */
 
 .subsection-heading {
-    margin-top: 7rem;
+    margin-top: 4rem;
     text-align: center;
     color: var(--dark-blue);
 }
@@ -357,6 +357,12 @@ footer>div>p {
 }
 
 /* call-to-action buttons */
+
+.cta-flex-container {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+}
 
 .call-to-action {
     margin-left: auto;
@@ -425,7 +431,7 @@ footer>div>p {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
-        background-image: url('../images/portfolio-hero-desktop-lumn-399160.jpg');
+        background-image: url('../public/images/portfolio-hero-desktop-lumn-399160.jpg');
     }
 
     #hero-header {
@@ -448,5 +454,9 @@ footer>div>p {
 
     .navigation-bar-link:first-child {
         margin-top: 0rem;
+    }
+
+    .subsection-heading {
+        margin-top: 7rem;
     }
 }

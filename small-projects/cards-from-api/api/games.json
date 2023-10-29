@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "title": "Culdcept",
+    "platform": {
+      "manufacturer": "Sega",
+      "name": "Saturn"
+    },
+    "developer": "Omiya Soft",
+    "producer": "Sega",
+    "images": {
+      "titleScreen": "culdcept_saturn_00.png",
+      "borderlessTitleScreen": "../images/screenshots/culdcept_saturn_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Do battle with customized decks of spells in this addictive strategy game.",
+    "japaneseRequirement": "Moderate Japanese",
+    "genres": [
+      "card battle",
+      "board game"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Culdcept Expansion",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Omiya Soft",
+    "producer": "Media Factory",
+    "images": {
+      "titleScreen": "culdcept_expansion_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/culdcept_expansion_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Do battle with customized decks of spells in this addictive strategy game.",
+    "japaneseRequirement": "Moderate Japanese",
+    "genres": [
+      "card battle",
+      "board game"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Gran Turismo 2",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Polyphony Digital",
+    "producer": "Sony",
+    "images": {
+      "titleScreen": "gran_turismo_2_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/gran_turismo_2_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Spectacular racing simulator featuring a massive number of authentic vehicles",
+    "japaneseRequirement": "Light Japanese",
+    "genres": [
+      "racing",
+      "simulation"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Grandia",
+    "platform": {
+      "manufacturer": "Sega",
+      "name": "Saturn"
+    },
+    "developer": "Game Arts",
+    "producer": "ESP",
+    "images": {
+      "titleScreen": "grandia_saturn_00.png",
+      "borderlessTitleScreen": "../images/screenshots/grandia_saturn_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Enjoy this classic JRPG with its loveable cast of characters and satisfying battle system.",
+    "japaneseRequirement": "Heavy Japanese",
+    "genres": [
+      "Japanese-style roleplaying"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Grandia",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Game Arts",
+    "producer": "ESP",
+    "images": {
+      "titleScreen": "grandia_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/grandia_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Enjoy this classic JRPG with its loveable cast of characters and satisfying battle system.",
+    "japaneseRequirement": "Heavy Japanese",
+    "genres": [
+      "Japanese-style roleplaying"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Minna no Golf 2",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Clap Hanz",
+    "producer": "Sony",
+    "images": {
+      "titleScreen": "minna_no_golf_2_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/minna_no_golf_2_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Much-improved sequel to the already immensely popular golf game",
+    "japaneseRequirement": "Light Japanese",
+    "genres": [
+      "golf",
+      "sports"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "R-Type Delta",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Irem",
+    "producer": "Irem",
+    "images": {
+      "titleScreen": "r-type_delta_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/r-type_delta_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Shooter with gorgeous visuals that complement its memorization-heavy gameplay",
+    "japaneseRequirement": "Light Japanese",
+    "genres": [
+      "horizontal-scrolling shooter"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Saru! Get You!",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "Sony",
+    "producer": "Sony",
+    "images": {
+      "titleScreen": "saru!_get_you!_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/saru!_get_you!_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Catch all the monkeys in this light-hearted but satisfying action game",
+    "japaneseRequirement": "Light Japanese",
+    "genres": [
+      "action"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Shadow Tower",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "From Software",
+    "producer": "From Software",
+    "images": {
+      "titleScreen": "shadow_tower_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/shadow_tower_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Experience the oppressive atmosphere of this merciless dungeon-crawler.",
+    "japaneseRequirement": "Moderate Japanese",
+    "genres": [
+      "action",
+      "roleplaying"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Um Jammer Lammy",
+    "platform": {
+      "manufacturer": "Sony",
+      "name": "PlayStation"
+    },
+    "developer": "NanaOn-Sha",
+    "producer": "Sony",
+    "images": {
+      "titleScreen": "um_jammer_lammy_playstation_00.png",
+      "borderlessTitleScreen": "../images/screenshots/um_jammer_lammy_playstation_title.png",
+      "screenshots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "description": "Much-improved sequel to the wildly creative rythm game Parappa the Rapper",
+    "japaneseRequirement": "Light Japanese",
+    "genres": [
+      "rhythm"
+    ]
+  }
+]
