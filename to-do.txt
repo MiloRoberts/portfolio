@@ -1,11 +1,7 @@
 Aria-current needs to be dynamically set in main-headers and footers for each page.
 
-I should perhaps add a pattern to spruce up the backgrounds a little.
-
 Add content to projects section of homepage.
 
 Add content to projects page.
 
 Add content to skills page.
-
-Add photos to about page.

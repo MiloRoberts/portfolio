@@ -248,10 +248,6 @@ a {
     font-size: calc(19px*1.1);
 }
 
-#plant-image {
-    display: none;
-}
-
 /* about section */
 
 #about {
@@ -290,6 +286,11 @@ legend {
     display: none;
 }
 
+.two-item-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* other pages */
 
 .subsection-heading {
@@ -323,12 +324,22 @@ td:nth-of-type(odd) {
     color: var(--blue);
 }
 
+#flashcard-image {
+    width: 150px;
+}
+
 #database-image {
     border: 2px solid var(--light-blue);
 }
 
 #database-image:hover {
     filter: brightness(95%);
+}
+
+.memory-game-image {
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    width: 200px;
 }
 
 footer>div>nav>ul {
