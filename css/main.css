@@ -336,6 +336,11 @@ td:nth-of-type(odd) {
     filter: brightness(95%);
 }
 
+#cards-api-image {
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+
 .memory-game-image {
     border: 2px solid var(--blue);
     border-radius: 5px;
@@ -408,6 +413,13 @@ footer>div>p {
 
 .read-more:hover {
     color: var(--call-to-action-color);
+}
+
+@media screen and (min-width: 450px) {
+    .two-item-flex-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 @media screen and (min-width: 640px) {
