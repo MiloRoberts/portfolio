@@ -43,6 +43,7 @@ section>div>header+* {
 }
 
 p,
+span,
 li,
 label,
 legend,
@@ -248,6 +249,19 @@ a {
     font-size: calc(19px*1.1);
 }
 
+/* projects section */
+
+.project-sample-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.project-sample-images-container>img {
+    height: 200px;
+}
+
 /* about section */
 
 #about {
@@ -288,7 +302,8 @@ legend {
 
 .two-item-flex-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* other pages */
@@ -415,10 +430,24 @@ footer>div>p {
     color: var(--call-to-action-color);
 }
 
-@media screen and (min-width: 450px) {
+.skills-examples-container {
+    display: block;
+    float: right;
+}
+
+.skills-examples-container>a {
+    font-weight: bold;
+}
+
+.skills-examples-container>a:hover {
+    color: var(--call-to-action-color);
+}
+
+@media screen and (min-width: 470px) {
     .two-item-flex-container {
-        flex-direction: column;
-        gap: 1rem;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 0;
     }
 }
 
