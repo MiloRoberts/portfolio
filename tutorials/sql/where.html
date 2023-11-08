@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div id="left-navbar">
+        <a href="./overview.html">OVERVIEW &nbsp; 1</a>
+        <a href="./from.html">FROM &nbsp; 2</a>
+        <a href="./select.html">SELECT &nbsp; 3</a>
+        <a href="./where.html">WHERE &nbsp; 4</a>
+        <a href="../topics.html">GO BACK &nbsp; &larr;</a>
+    </div>
+    <h1>SQL: WHERE</h1>
+    <p>The <em>WHERE</em> keyword is used when it is necessary to filter out specific data. It adds conditions which
+        records must meet in order to be included in the query. The following query displays all of the records in the
+        students table.</p>
+    <h3>SELECT *</h3>
+    <h3>FROM students;</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>last_name</td>
+                <td>first_name</td>
+                <td>grade</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Holmes</td>
+                <td>Guy</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Atwell</td>
+                <td>James</td>
+                <td>73</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>O'Hara</td>
+                <td>Alice</td>
+                <td>96</td>
+            <tr>
+                <td>004</td>
+                <td>Peterson</td>
+                <td>Holly</td>
+                <td>83</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>If, however, we only want to see the records of those students with a grade greater than 85, the <em>WHERE</em>
+        keyword is required.</p>
+    <h3>SELECT *</h3>
+    <h3>FROM students</h3>
+    <h3>WHERE grade > 85;</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>last_name</td>
+                <td>first_name</td>
+                <td>grade</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Holmes</td>
+                <td>Guy</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>O'Hara</td>
+                <td>Alice</td>
+                <td>96</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The students with grades of 85 and less are now excluded from the query results.</p>
+    <p>The keywords <em>AND</em> and <em>OR</em> can be used after <em>WHERE</em> to make the query even more specified.
+        Their usage can be seen in the following interactive query. Click on the grayed out sections to add or remove
+        them from the query.</p>
+    <h3>SELECT *</h3>
+    <h3>FROM countries</h3>
+    <h3>WHERE population > 1000000<span id="and-condition" class="where"> AND language = 'Spanish'</span><span
+            id="or-condition" class="where"> OR language = 'Icelandic'</span>;</h3>
+    <table>
+        <thead>
+            <tr>
+                <td>name</td>
+                <td>capital</td>
+                <td>language</td>
+                <td>population</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spain</td>
+                <td>Madrid</td>
+                <td>Spanish</td>
+                <td>47350000</td>
+            </tr>
+            <tr id="iceland">
+                <td class="iceland">Iceland</td>
+                <td class="iceland">Reykjavík</td>
+                <td class="iceland">Icelandic</td>
+                <td class="iceland">366425</td>
+            </tr>
+            <tr>
+                <td>Peru</td>
+                <td>Lima</td>
+                <td>Spanish</td>
+                <td>32000000</td>
+            </tr>
+            <tr id="vietnam">
+                <td class="vietnam">Vietnam</td>
+                <td class="vietnam">Hanoi</td>
+                <td class="vietnam">Vietnamese</td>
+                <td class="vietnam">97340000</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="sequential-nav-container">
+        <a href="./select.html" id="back">BACK</a>
+        <div id="sequential-nav-filler"></div>
+    </div>
+    <div id="copyright">
+        <p>The content on this site is the property of Milo Roberts (MiloRoberts.com) and may not be reproduced.</p>
+    </div>
+    <script src="../javascript/where.js"></script>
+</body>
+
+</html>
