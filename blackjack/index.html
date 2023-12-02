@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./public/styles/normalize.css">
+  <link rel="stylesheet" href="./public/styles/main.css" />
+</head>
+
+<body>
+  <h1 id="title">BLACKJACK</h1>
+  <div id="flex-container">
+    <div id="flex-left" class="flex-column">
+      <h2>Player</h2>
+      <span id="player-value" class="value"></span>
+      <div id="player-hand" class="hand"></div>
+      <!-- <div id="player-money">
+          <h2><span>$</span></h2>
+        </div> -->
+      <button type="button" id="hit-btn">Hit</button>
+      <button type="button" id="stand-btn">Stand</button>
+    </div>
+    <div id="flex-right" class="flex-column">
+      <h2>Dealer</h2>
+      <span id="dealer-value" class="value"></span>
+      <div id="dealer-hand" class="hand"></div>
+    </div>
+  </div>
+  <!-- <h2 id="feedback">feedback goes here</h2> -->
+  <!-- <h1>&#x1F0A0;</h1> -->
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>

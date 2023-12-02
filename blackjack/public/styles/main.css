@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(238, 238, 223);
+  background-image: url('../images/pexels-raka-miftah-4253690.jpg');
+}
+
+#title {
+  text-align: center;
+}
+
+#title,
+h2,
+.value {
+  color: white;
+}
+
+.hand {
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hand {
+  display: flex;
+}
+
+#feedback {
+  text-align: center;
+}
+
+button {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 0.2em;
+}
