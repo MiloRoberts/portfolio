@@ -12,7 +12,7 @@ const hitBtn = document.querySelector('#hit-btn');
 const standBtn = document.querySelector('#stand-btn');
 
 hitBtn.addEventListener('click', () => {
-  hit(blackjackDeck, playerHand);
+  hit(blackjackDeck, playerHand, dealerHand);
 });
 
 standBtn.addEventListener('click', () => {

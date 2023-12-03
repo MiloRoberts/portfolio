@@ -1,6 +1,5 @@
 import addToHand from "./addToHand.js";
 import evaluateHand from "./evaluateHand.js";
-// import showDealerHand from "./showDealerHand.js";
 import determineWinner from './determineWinner.js';
 
 function stand(blackjackDeck, playerHand, dealerHand) {
@@ -14,12 +13,7 @@ function stand(blackjackDeck, playerHand, dealerHand) {
     ) {
         dealerHand.drawCard(blackjackDeck);
         addToHand("dealer-hand", dealerHand, dealerHand.hand.length - 1);
-        if (evaluateHand(dealerHand, "dealer-value") > 21) {
-            alert("Dealer goes bust. You win.");
-            window.location.reload();
-        }
     }
-    // showDealerHand(blackjackDeck, dealerHand);
     determineWinner(playerHand, dealerHand);
 }
 
