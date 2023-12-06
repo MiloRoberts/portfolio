@@ -254,12 +254,13 @@ a {
 .project-sample-images-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.5rem;
     margin-top: 1rem;
 }
 
 .project-sample-images-container>img {
     height: 200px;
+    border-radius: 10px;
 }
 
 /* about section */

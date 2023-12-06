@@ -23,7 +23,7 @@ function determineWinner(playerHand, dealerHand) {
     }
     setTimeout(() => {
         window.location.reload();
-    }, 2000);
+    }, 1000);
 }
 
 export default determineWinner;
