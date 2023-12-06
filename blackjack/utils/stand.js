@@ -14,7 +14,9 @@ function stand(blackjackDeck, playerHand, dealerHand) {
         dealerHand.drawCard(blackjackDeck);
         addToHand("dealer-hand", dealerHand, dealerHand.hand.length - 1);
     }
-    determineWinner(playerHand, dealerHand);
+    setTimeout(() => {
+        determineWinner(playerHand, dealerHand);
+    }, 0);
 }
 
 export default stand;
